@@ -72,6 +72,7 @@ public class OsrsNpcPacker implements DataPacker{
             bas.strafe_right = osrsDef.rotate90RightAnimation;
         if (osrsDef.rotate180Animation > 0)
             bas.backwards = osrsDef.rotate180Animation;
+        return bas;
     }
 
     public int getBasOffset(){

@@ -10,6 +10,11 @@ import store.io.InputStream;
 public class OsrsItemPacker implements  DataPacker{
 
     @Override
+    public void packData(FileStore sourceCache, FileStore destinationCache, int[] ids) {
+
+    }
+
+    @Override
     public void packAllData(FileStore osrsCache, FileStore destinationCache) {
         int osrsItemIndexSize = Utils.getItemDefinitionsSize(osrsCache);
         int packed = 0;
