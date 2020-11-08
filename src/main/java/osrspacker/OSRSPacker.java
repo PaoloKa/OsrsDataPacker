@@ -26,7 +26,7 @@ import utility.XTEASManager;
 @SuppressWarnings("unused")
 public class OSRSPacker {
 
-    private static final DecimalFormat format = new DecimalFormat("#.##");
+    public static final DecimalFormat format = new DecimalFormat("#.##");
 
     public static final String CACHE_DIR = "F:\\Mega-Sausage-Server\\data\\cache\\";
     private static final String OSRS_CACHE = "C:\\Users\\Andrew\\Desktop\\rs685_cache\\"; //"C:\\Users\\Andrew\\Desktop\\177\\";
