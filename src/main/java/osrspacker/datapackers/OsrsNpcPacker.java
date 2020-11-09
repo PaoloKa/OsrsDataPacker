@@ -10,7 +10,6 @@ import java.util.HashMap;
 
 public class OsrsNpcPacker implements DataPacker{
 
-
     private HashMap<Integer, BASDefinition> packedRenderDefinitions;
 
     @Override
