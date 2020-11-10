@@ -9,7 +9,6 @@ import store.codec.util.BitUtils;
 import store.codec.util.Utils;
 import store.io.InputStream;
 import store.io.OutputStream;
-import suite.Constants;
 
 public class ItemDefinition implements AbstractDefinition, Cloneable {
 
@@ -1116,7 +1115,7 @@ public class ItemDefinition implements AbstractDefinition, Cloneable {
 	
 	@Override
 	public String toString() {
-		return this.id + " - " + this.name + (Constants.settings.debug ? "(" + (this.noteTemplate > 0 ? "Noted" : "Unnoted") + ")" : "");
+		return this.id + " - " + this.name;
 	}
 	
 	@Override
