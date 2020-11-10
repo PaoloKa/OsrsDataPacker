@@ -1,4 +1,4 @@
-package osrspacker.datapackers;
+package datapacker.datapackers;
 
 import store.FileStore;
 import store.codec.SpotDefinition;
@@ -6,7 +6,7 @@ import store.codec.util.Constants;
 import store.codec.util.Utils;
 import store.io.InputStream;
 
-public class OsrsGfxPacker implements DataPacker {
+public class OsrsGfxPackerI implements IDataPacker {
 
     @Override
     public void packAllData(FileStore sourceCache, FileStore destinationCache) {

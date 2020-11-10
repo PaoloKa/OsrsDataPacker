@@ -1,4 +1,4 @@
-package osrspacker.datapackers;
+package datapacker.datapackers;
 
 import store.FileStore;
 import store.Indices;
@@ -7,7 +7,7 @@ import store.codec.util.Constants;
 import store.codec.util.Utils;
 import store.io.InputStream;
 
-public class OsrsItemPacker implements  DataPacker{
+public class OsrsItemPackerI implements IDataPacker {
 
     @Override
     public void packAllData(FileStore osrsCache, FileStore destinationCache) {

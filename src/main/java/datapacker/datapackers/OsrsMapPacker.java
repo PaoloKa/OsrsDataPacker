@@ -1,7 +1,6 @@
-package osrspacker.datapackers;
+package datapacker.datapackers;
 
-import osrspacker.OSRSPacker;
-import osrspacker.PackerUtils;
+import datapacker.PackerUtils;
 import store.FileStore;
 import store.codec.util.Constants;
 import store.codec.util.Utils;
@@ -12,9 +11,8 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.NoSuchFileException;
 
-public class OsrsMapPacker implements DataPacker{
+public class OsrsMapPacker implements IDataPacker{
 
     @Override
     public void packAllData(FileStore sourceCache, FileStore destinationCache) {
@@ -27,7 +25,7 @@ public class OsrsMapPacker implements DataPacker{
         for (int index = 0; index < regionIds.length; index++) {
             pack_region(destinationCache, regionIds[index], regionIds[index]);
             percentage = (double) index / (double) (regionIds.length) * 100D;
-            System.out.println("Packing regions: " + OSRSPacker.format.format(percentage) + "%");
+            System.out.println("Packing regions: " + PackerUtils.format.format(percentage) + "%");
         }
         System.out.println("Done packing regions.");
     }

@@ -1,8 +1,8 @@
-package osrspacker.datapackers;
+package datapacker.datapackers;
 
 import store.FileStore;
 
-public interface DataPacker {
+public interface IDataPacker {
 
     void packAllData(FileStore sourceCache, FileStore destinationCache);
     int getDataOffset();

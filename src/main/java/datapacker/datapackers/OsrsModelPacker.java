@@ -1,10 +1,10 @@
-package osrspacker.datapackers;
+package datapacker.datapackers;
 
-import osrspacker.OSRSPacker;
+import datapacker.PackerUtils;
 import store.FileStore;
 import store.codec.util.Constants;
 
-public class OsrsModelPacker implements DataPacker {
+public class OsrsModelPacker implements IDataPacker {
 
     @Override
     public void packAllData(FileStore sourceCache, FileStore destinationCache) {
@@ -16,7 +16,7 @@ public class OsrsModelPacker implements DataPacker {
                 continue;
             destinationCache.getIndexes()[7].putFile((index + getDataOffset()), 0, Constants.GZIP_COMPRESSION, data, null, false, false, -1, -1);
             percentage = (double) index / (double) valid_models * 100D;
-            System.out.println("Packing models: " + OSRSPacker.format.format(percentage) + "%");
+            System.out.println("Packing models: " + PackerUtils.format.format(percentage) + "%");
         }
         System.out.println("Rewriting table..");
         destinationCache.getIndexes()[7].rewriteTable();
