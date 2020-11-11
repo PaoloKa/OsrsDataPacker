@@ -1,7 +1,0 @@
-package misc;
-
-public enum EditorType {
-
-	ITEM, NPC, OBJECT, MATERIAL, TEXTURE, PARTICLE, SPRITE, RENDER, SPOT, SEQUENCE, HITMARK;
-	
-}
