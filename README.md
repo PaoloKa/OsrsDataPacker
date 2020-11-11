@@ -17,7 +17,15 @@ Currently supports
  
  Animations are almost done, will be pushed on a later date.
  Widgets/Interfaces might also be done on a later date.
+## How To
 
+Run the DataPackerTool.java file, atm there is no support for running individual packers. When you run this class it will run ALL the packers.
+You can easly add singe datapackers to your main. Example:
+```
+ var objectPacker = new OsrsObjectPacker();
+ objectPacker.packAllData(sourceCache,destinationCache);
+ 
+```
 
 ## I tried the tool, but the osrs data isn't working ? 
 I modified my client so there are multiple decoders, one for my revision and for the osrs revision.
