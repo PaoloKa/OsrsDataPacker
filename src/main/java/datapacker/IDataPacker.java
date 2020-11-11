@@ -1,4 +1,4 @@
-package datapacker.datapackers;
+package datapacker;
 
 import store.FileStore;
 

@@ -1,6 +1,7 @@
 package datapacker.datapackers;
 
 import datapacker.PackerUtils;
+import datapacker.IDataPacker;
 import store.FileStore;
 import store.codec.util.Constants;
 

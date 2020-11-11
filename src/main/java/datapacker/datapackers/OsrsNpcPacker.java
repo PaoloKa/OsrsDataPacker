@@ -1,5 +1,6 @@
 package datapacker.datapackers;
 
+import datapacker.IDataPacker;
 import lombok.var;
 import store.FileStore;
 import store.Indices;
@@ -7,7 +8,7 @@ import store.codec.BASDefinition;
 
 import java.util.HashMap;
 
-public class OsrsNpcPackerI implements IDataPacker {
+public class OsrsNpcPacker implements IDataPacker {
 
     private HashMap<Integer, BASDefinition> packedRenderDefinitions;
 

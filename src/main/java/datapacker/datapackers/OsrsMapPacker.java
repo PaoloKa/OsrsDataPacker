@@ -1,6 +1,7 @@
 package datapacker.datapackers;
 
 import datapacker.PackerUtils;
+import datapacker.IDataPacker;
 import store.FileStore;
 import store.codec.util.Constants;
 import store.codec.util.Utils;
@@ -12,7 +13,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.file.Files;
 
-public class OsrsMapPacker implements IDataPacker{
+public class OsrsMapPacker implements IDataPacker {
 
     @Override
     public void packAllData(FileStore sourceCache, FileStore destinationCache) {

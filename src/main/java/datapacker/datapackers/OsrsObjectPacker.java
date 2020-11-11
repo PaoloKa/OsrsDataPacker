@@ -1,13 +1,14 @@
 package datapacker.datapackers;
 
 import datapacker.PackerUtils;
+import datapacker.IDataPacker;
 import store.FileStore;
 import store.codec.util.Constants;
 
 import static store.codec.util.Utils.getConfigArchive;
 import static store.codec.util.Utils.getConfigFile;
 
-public class OsrsObjectPacker implements IDataPacker{
+public class OsrsObjectPacker implements IDataPacker {
 
     @Override
     public void packAllData(FileStore sourceCache, FileStore destinationCache) {

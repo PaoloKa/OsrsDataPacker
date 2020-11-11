@@ -1,12 +1,13 @@
 package datapacker.datapackers;
 
+import datapacker.IDataPacker;
 import store.FileStore;
 import store.codec.SpotDefinition;
 import store.codec.util.Constants;
 import store.codec.util.Utils;
 import store.io.InputStream;
 
-public class OsrsGfxPackerI implements IDataPacker {
+public class OsrsGfxPacker implements IDataPacker {
 
     @Override
     public void packAllData(FileStore sourceCache, FileStore destinationCache) {
