@@ -29,30 +29,4 @@ public class DataPackerTool {
         });
         System.out.println("Packer finished");
     }
-
-
-
-//    private static final void transfer_flos(FileStore osrs_cache, FileStore cache) throws IOException {
-//        for (int file = 0; file < 200; file++) {
-//            byte[] data = osrs_cache.getIndexes()[2].getFile(4, file);
-//            if (data == null)
-//                continue;
-//            int id = (file + OVERLAY_OFFSET);
-//            System.out.println("Packing overlay " + id + ", size: " + data.length);
-//            cache.getIndexes()[2].putFile(4, id, data);
-//            System.out.println("Packed overlay " + file + " as overlay " + id + ".");
-//        }
-//    }
-//
-//    private static final void transfer_flus(FileStore osrs_cache, FileStore cache) throws IOException {
-//        for (int file = 0; file < 200; file++) {
-//            byte[] data = osrs_cache.getIndexes()[Indices.CONFIG.getIndex()].getFile(ConfigArchive.UNDERLAYS.getValue(), file);
-//            if (data == null)
-//                continue;
-//            int id = (file + UNDERLAY_OFFSET);
-//            System.out.println("Packing underlay " + id + ", size: " + data.length);
-//            cache.getIndexes()[Indices.CONFIG.getIndex()].putFile(ConfigArchive.UNDERLAYS.getValue(), id, data);
-//            System.out.println("Packed underlay " + file + " as underlay " + id + ".");
-//        }
-//    }
 }
