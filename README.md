@@ -3,6 +3,7 @@
 ## Info
 this tool can be used to pack data from the OSRS cache to a RS2 cache.
 Packing is done with an offset, which you can customize in your specific packer. 
+The tool was created and tested with the 718 revision, but should be able the handle others RS2 cache revisions.
 
 **This tool is unstable, use within your own risk. Always make a backup of your cache**
 
